@@ -13,6 +13,12 @@ def index():
         "index.html", pageTitle="Web form template", friends=friend_list
     )
 
+@app.route("/about", methods=["GET"])
+def about():
+    return render_template(
+        "index.html", pageTitle="Web form template", friends=friend_list
+    )
+
 
 @app.route("/add", methods=["POST"])
 def add():
